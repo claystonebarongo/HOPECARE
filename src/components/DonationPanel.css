@@ -1,24 +1,31 @@
 /* ==========================================================================
-   1. SECTION CANVAS CONFIGURATION
+   1. SECTION CANVAS CONFIGURATION (VIEWPORT BOXING CONTROLS)
    ========================================================================== */
 .donation-section {
-    padding: 120px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 100px 0;
+    width: 100%;
     position: relative;
     z-index: 10;
     box-sizing: border-box;
 }
 
+/* New defensive wrapper layer matching the update in your JSX file */
+.donation-inner-wrapper {
+    max-width: 1200px;
+    width: 90%; /* Creates a clean, protective gap on both sides of the screen */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .donation-container {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 50px;
+    grid-template-columns: 1.15fr 0.85fr; /* Re-balanced focus column scales */
+    gap: 60px;
     align-items: start;
 }
 
 /* ==========================================================================
-   2. LEFT COLUMN: STORY ELEMENTS
+   2. LEFT COLUMN: HIGH-LEGIBILITY STORY ELEMENTS
    ========================================================================== */
 .donation-badge {
     font-size: 0.72rem;
@@ -30,27 +37,26 @@
     border-radius: 50px;
     display: inline-block;
     box-shadow: 0 4px 14px rgba(255, 204, 0, 0.25);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     border: none;
 }
 
 .donation-main-title {
-    font-size: 2.4rem;
-    font-weight: 800;
+    font-size: 2.5rem; /* Balanced size */
+    font-weight: 900; /* Chunky editorial appearance profile */
     color: #1A1A1A;
     line-height: 1.2;
     margin: 0 0 28px 0;
-    letter-spacing: -0.5px;
+    letter-spacing: -1.2px; /* Smooth professional text tracking */
 }
 
 .story-image-frame {
     width: 100%;
-    height: 360px;
-    border-radius: 28px;
+    height: 380px;
+    border-radius: 24px;
     overflow: hidden;
-    margin-bottom: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.03);
+    margin-bottom: 36px;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.04);
 }
 
 .story-hero-img {
@@ -65,27 +71,28 @@
 }
 
 .story-text-content p {
-    font-size: 1.08rem;
-    color: #444444;
-    line-height: 1.75;
-    margin-bottom: 20px;
+    font-size: 1.05rem; 
+    color: #2D3748; /* Darker charcoal tint for optimized readability */
+    line-height: 1.8; /* Elevated line spacing depth so readers don't get bored */
+    margin-bottom: 22px;
     font-weight: 400;
+    letter-spacing: -0.1px;
 }
 
 .story-text-content blockquote {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-left: 4px solid #FFCC00;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 5px solid #FFCC00;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 24px 28px;
-    margin: 32px 0;
+    padding: 26px 32px;
+    margin: 36px 0;
     font-style: italic;
-    color: #1A1A1A;
-    line-height: 1.65;
-    border-radius: 4px 20px 20px 4px;
+    color: #000000;
+    line-height: 1.7;
+    border-radius: 4px 24px 24px 4px;
     font-weight: 500;
 }
 
@@ -93,12 +100,12 @@
     color: #E5B800;
     font-size: 1.2rem;
     font-weight: 800;
-    letter-spacing: -0.2px;
-    margin-top: 32px;
+    letter-spacing: -0.3px;
+    margin-top: 36px;
 }
 
 /* ==========================================================================
-   3. RIGHT COLUMN: PAYMENT METHODS & PINNING ENGINE
+   3. RIGHT COLUMN: COHESIVE PAYMENT HOUSINGS
    ========================================================================== */
 .donation-channels-side {
     display: flex;
@@ -108,13 +115,12 @@
     top: 40px; 
 }
 
-/* Premium Frosted Glass Layout Layer */
 .glass-panel {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 28px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
     box-shadow: 0 12px 40px rgba(15, 23, 42, 0.03);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
                 box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -122,11 +128,12 @@
 
 .glass-panel:hover {
     transform: translateY(-4px);
-    box-shadow: 0 24px 50px rgba(255, 204, 0, 0.1);
+    box-shadow: 0 24px 50px rgba(255, 204, 0, 0.12);
 }
 
 .method-card {
     padding: 40px;
+    box-sizing: border-box;
 }
 
 .method-header {
@@ -139,7 +146,7 @@
 }
 
 .method-header h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #1A1A1A;
     letter-spacing: -0.3px;
@@ -147,17 +154,16 @@
 }
 
 .method-icon { 
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
 }
 
 .remittance-desc {
-    font-size: 1rem;
-    color: #555555;
+    font-size: 0.98rem;
+    color: #4A5568;
     line-height: 1.6;
     margin: 0 0 24px 0;
 }
 
-/* Western Union Link Button styling */
 .western-union-link-btn {
     display: inline-flex;
     align-items: center;
@@ -185,7 +191,6 @@
     box-shadow: 0 8px 20px rgba(242, 169, 0, 0.25);
 }
 
-/* Alternative channels stack */
 .alternative-services-grid {
     display: flex;
     flex-direction: column;
@@ -194,7 +199,7 @@
 
 .service-sub-card {
     background: rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.04);
     padding: 20px 24px;
     border-radius: 16px;
 }
@@ -202,14 +207,14 @@
 .service-sub-card h4 {
     margin: 0 0 6px 0;
     color: #1A1A1A;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     letter-spacing: -0.2px;
 }
 
 .service-sub-card p {
     margin: 0;
-    color: #555555;
+    color: #4A5568;
     font-size: 0.92rem;
     line-height: 1.5;
 }
@@ -227,14 +232,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1rem;
+    font-size: 0.98rem;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
     padding-bottom: 12px;
 }
 
 .row-label { 
     color: #555555; 
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 600;
 }
 
@@ -247,7 +252,7 @@
 .highlight-green { 
     color: #1A1A1A !important; 
     font-family: monospace;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     background: rgba(255, 204, 0, 0.15);
     padding: 2px 8px;
     border-radius: 6px;
@@ -259,15 +264,15 @@
 .mpesa-hero-box {
     background: rgba(255, 204, 0, 0.04);
     border: 1px solid rgba(255, 204, 0, 0.2);
-    padding: 32px;
+    padding: 28px;
     border-radius: 20px;
     text-align: center;
 }
 
 .mpesa-label { 
     color: #555555; 
-    font-size: 1rem; 
-    margin: 0 0 12px 0;
+    font-size: 0.9rem; 
+    margin: 0 0 10px 0;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -275,14 +280,14 @@
 
 .mpesa-number { 
     color: #1A1A1A; 
-    font-size: 2.2rem; 
+    font-size: 2rem; 
     font-weight: 900; 
     margin: 0; 
     letter-spacing: -0.5px;
 }
 
 .mpesa-instructions {
-    color: #666666;
+    color: #555555;
     font-size: 0.88rem;
     line-height: 1.6;
     margin: 18px 0 0 0;
@@ -290,7 +295,7 @@
 }
 
 /* ==========================================================================
-   6. MAIN CALL TO ACTION BUTTON (GOLD ANCHORED)
+   6. MAIN ACTION COMPONENT BUTTON
    ========================================================================== */
 .donate-now-action-btn {
     display: flex;
@@ -316,20 +321,16 @@
     box-shadow: 0 16px 35px rgba(255, 204, 0, 0.45);
 }
 
-.donate-now-action-btn:active {
-    transform: translateY(-1px);
-}
-
 /* ==========================================================================
-   7. RESPONSIVE ADAPTIVE BREAKPOINTS
+   7. PREMIUM RESPONSIVE PHONE WRAPPERS
    ========================================================================== */
 @media (max-width: 968px) {
     .donation-section {
-        padding: 80px 0;
+        padding: 60px 0;
     }
     .donation-container {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 45px;
     }
     .donation-channels-side {
         position: static;
@@ -337,25 +338,39 @@
 }
 
 @media (max-width: 580px) {
+    .donation-section {
+        padding: 40px 0;
+    }
+    .donation-inner-wrapper {
+        width: 92%; /* Clean margin safety padding logic for screen edges */
+    }
     .donation-main-title {
-        font-size: 1.9rem;
+        font-size: 1.8rem; /* Smooth, scaled down typography to eliminate awkward line wrap gaps */
+        letter-spacing: -0.8px;
     }
     .story-image-frame {
-        height: 260px;
+        height: 250px;
         border-radius: 20px;
+        margin-bottom: 24px;
+    }
+    .story-text-content p {
+        font-size: 1rem;
+        line-height: 1.75; /* Preserves optimized line-height ratios on small viewports */
     }
     .method-card {
-        padding: 28px 20px;
+        padding: 30px 20px;
     }
     .routing-row {
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
+        padding-bottom: 14px;
     }
     .row-val {
         text-align: left;
+        margin-top: 2px;
     }
     .mpesa-number {
-        font-size: 1.8rem;
+        font-size: 1.65rem;
     }
 }
