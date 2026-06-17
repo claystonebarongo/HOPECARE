@@ -13,12 +13,11 @@
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Glassmorphism base helper applied via component */
+/* Crisp, bright Yellow Africa header background configuration */
 .glass-nav {
-    background: rgba(10, 15, 30, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: #ffffff;
+    border-bottom: 2px solid #FFCC00; /* Signature Brand Yellow Accent */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Branding Zone */
@@ -38,15 +37,16 @@
     font-size: 1.2rem;
     font-weight: 800;
     letter-spacing: 0.5px;
-    color: #fff;
+    color: #1A1A1A; /* Deep premium charcoal text */
     margin: 0;
 }
 
 .brand-subtitle {
     font-size: 0.75rem;
-    color: #10b981;
+    color: #FFCC00; /* Swapped explicitly to Brand Yellow */
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 /* Nav Actions Link Zone */
@@ -58,7 +58,7 @@
 
 .nav-link {
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
     transition: color 0.2s ease-in-out, transform 0.2s ease;
 }
@@ -68,12 +68,12 @@
 }
 
 .text-active {
-    color: #fff;
+    color: #1A1A1A; /* Active dark state */
     font-weight: 700;
     position: relative;
 }
 
-/* Clean active indicator line for desktop */
+/* Clean active indicator line for desktop turned to Brand Yellow */
 @media (min-width: 769px) {
     .text-active::after {
         content: '';
@@ -81,32 +81,51 @@
         bottom: -6px;
         left: 0;
         width: 100%;
-        height: 2px;
-        background: #10b981;
+        height: 3px;
+        background: #FFCC00;
         border-radius: 2px;
-        box-shadow: 0 0 8px #10b981;
     }
 }
 
 .text-muted {
-    color: #94a3b8;
+    color: #555555; /* Highly readable dark gray links */
 }
 
 .text-muted:hover {
-    color: #fff;
+    color: #FFCC00; /* Switches cleanly to yellow on hover */
+}
+
+/* Primary Yellow Action Button */
+.btn-glow {
+    background: #FFCC00;
+    color: #1A1A1A;
+    border: none;
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.2);
+}
+
+.btn-glow:hover {
+    background: #E5B800; /* Deeper gold contrast on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 204, 0, 0.35);
 }
 
 .admin-toggle {
     background: transparent;
     border: none;
-    color: #64748b;
+    color: #777777;
     cursor: pointer;
     font-size: 0.85rem;
     transition: color 0.2s ease-in-out;
 }
 
 .admin-toggle:hover {
-    color: #94a3b8;
+    color: #1A1A1A;
 }
 
 /* Mobile Hamburger Architecture */
@@ -125,7 +144,7 @@
 .hamburger-trigger span {
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: #1A1A1A; /* Hamburger lines updated to dark contrast */
     border-radius: 2px;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
     transform-origin: center;
@@ -149,17 +168,15 @@
         display: flex;
     }
 
-    /* FIXED: Positioned top boundary right at the header bar boundary to avoid overlap artifacts */
+    /* Positioned top boundary right at the header bar boundary to avoid overlap artifacts */
     .nav-actions {
         position: fixed;
         top: 0;
         right: -100%;
         width: 80%;
         height: 100vh;
-        background: rgba(8, 10, 20, 0.98);
-        backdrop-filter: blur(25px);
-        -webkit-backdrop-filter: blur(25px);
-        border-left: 1px solid rgba(255, 255, 255, 0.08);
+        background: #ffffff; /* Fresh crisp white mobile drawer background */
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -167,7 +184,7 @@
         gap: 35px;
         box-sizing: border-box;
         transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
     }
 
     .nav-actions.mobile-show {
@@ -178,14 +195,14 @@
         font-size: 1.25rem;
         width: 100%;
         padding: 8px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
     
     .text-active {
-        color: #10b981; /* Changes active tab color on mobile text for higher clarity */
+        color: #FFCC00; /* Active item turns yellow on mobile menu text block */
     }
 
-    /* Forces your primary glow button to claim full width nicely inside the drawer context */
+    /* Full width mobile drawer button layout inherits yellow properties cleanly */
     .nav-actions .btn-glow {
         width: 100%;
         margin-top: 15px;

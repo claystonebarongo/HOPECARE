@@ -1,189 +1,234 @@
+/* ==========================================================================
+   1. FOOTER CANVAS CONFIGURATION (MAINTAINING THE SOFT STUDIO OFF-WHITE)
+   ========================================================================== */
 .footer-node {
-    margin-top: 80px;
-    background: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 60px 5% 40px 5%;
+    margin-top: 100px;
+    background: #f7f6f3; /* STRICTLY MAINTAINED: Your exact soft studio matte white */
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 100px 5% 50px 5%;
     position: relative;
     z-index: 100;
+    box-sizing: border-box;
 }
 
 .footer-content-wrap {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.2fr 0.9fr 0.9fr;
-    gap: 50px;
+    grid-template-columns: 1.3fr 0.85fr 0.85fr;
+    gap: 60px;
     align-items: start;
 }
 
-/* --- BRANDING BLOCK --- */
+/* ==========================================================================
+   2. BRANDING LOGO & COPYWRITING BLOCK
+   ========================================================================== */
 .footer-brand-section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 .footer-brand { 
-    color: #fff; 
-    font-size: 1.3rem; 
+    color: #1A1A1A; /* Ultra high-contrast premium text */
+    font-size: 1.5rem; 
     font-weight: 800; 
-    letter-spacing: 0.5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.brand-icon-vector {
-    color: #38bdf8;
-    font-size: 1.4rem;
-}
-
-.footer-brand-desc {
-    font-size: 0.9rem;
-    color: #94a3b8;
-    line-height: 1.6;
-    margin: 0;
-    max-width: 340px;
-}
-
-.footer-copyright { 
-    color: #475569; 
-    font-size: 0.8rem;
-    margin-top: 8px;
-}
-
-/* --- COLUMN HEADERS --- */
-.footer-meta-contact h4,
-.footer-social-section h4 {
-    color: #10b981;
-    font-size: 0.85rem;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    margin: 0 0 20px 0;
-    text-transform: uppercase;
-}
-
-/* --- CONTACT ROWS --- */
-.contact-detail-row {
+    letter-spacing: -0.5px;
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 0.95rem;
-    color: #cbd5e1;
-    margin: 0 0 14px 0;
+}
+
+.brand-icon-vector {
+    color: #FFCC00; /* Signature solid gold accent */
+    font-size: 1.6rem;
+}
+
+.footer-brand-desc {
+    font-size: 0.96rem;
+    color: #555555; /* Soft charcoal readability tint */
+    line-height: 1.7;
+    margin: 0;
+    max-width: 360px;
+    font-weight: 400;
+}
+
+.footer-copyright { 
+    color: #888888; 
+    font-size: 0.82rem;
+    margin-top: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+/* ==========================================================================
+   3. EDITORIAL COLUMN HEADERS
+   ========================================================================== */
+.footer-meta-contact h4,
+.footer-social-section h4 {
+    color: #1A1A1A;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0 0 28px 0;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+/* Elegant gold underline indicator under section headers */
+.footer-meta-contact h4::after,
+.footer-social-section h4::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #FFCC00;
+    border-radius: 50px;
+}
+
+/* ==========================================================================
+   4. DETAILED CONTACT LAYOUT ROWS
+   ========================================================================== */
+.contact-detail-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 1rem;
+    color: #1A1A1A;
+    margin: 0 0 18px 0;
+    font-weight: 500;
 }
 
 .contact-vector-icon {
-    font-size: 1rem;
-    color: #10b981; /* Matches the green theme accent color by default */
-    width: 16px;
+    font-size: 1.05rem;
+    color: #E5B800; /* Deep rich studio gold icon housing */
+    width: 20px;
     text-align: center;
 }
 
 .map-marker-icon {
-    font-size: 1.1rem;
-    color: #ef4444; /* Realistic Map Pin Red by default */
-    width: 16px;
+    font-size: 1.15rem;
+    color: #ef4444; /* Clean premium map indicator red */
+    width: 20px;
     text-align: center;
-} delta
+}
 
-/* --- SOCIAL LINK SECTION --- */
+/* ==========================================================================
+   5. SOCIAL CONNECTIONS INTERACTIVE GRID Architecture
+   ========================================================================== */
 .social-cta-text {
-    font-size: 0.9rem;
-    color: #94a3b8;
-    line-height: 1.5;
-    margin: 0 0 20px 0;
+    font-size: 0.96rem;
+    color: #555555;
+    line-height: 1.65;
+    margin: 0 0 24px 0;
 }
 
 .social-icons-matrix {
-    padding-top: 4%;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 14px;
 }
 
 .social-icon-link {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px; /* Sleek square corners match */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
-    color: #fff; /* White icon glyphs default */
+    font-size: 1.2rem;
+    color: #ffffff; 
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.3s ease;
 }
 
-
+/* Premium solid brand colorways */
 .social-icon-link.icon-fb {
     background: #1877f2; 
-    border: 1px solid #1877f2;
 }
 
 .social-icon-link.icon-wa {
     background: #25d366; 
-    border: 1px solid #25d366;
 }
 
 .social-icon-link.icon-tel {
-    background: #10b981; 
-    border: 1px solid #10b981;
+    background: #229ED9; /* Upgraded to authentic corporate telegram azure */
 }
 
 .social-icon-link.icon-ig {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    border: none;
 }
 
 .social-icon-link.icon-x {
-    background: #000000;
-    border: 1px solid #333333;
+    background: #1A1A1A;
 }
 
-/* --- LIGHT INTERACTIVE LIFT ON HOVER --- */
+/* --- ADAPTIVE INTERACTIVE SHADOW GLOWS --- */
 .social-icon-link:hover {
-    transform: translateY(-4px) scale(1.05);
+    transform: translateY(-5px);
+    filter: brightness(1.04);
 }
 
 .social-icon-link.icon-fb:hover {
-    box-shadow: 0 0 15px rgba(24, 119, 242, 0.5);
+    box-shadow: 0 10px 20px rgba(24, 119, 242, 0.3);
 }
 
 .social-icon-link.icon-wa:hover {
-    box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+    box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
 }
 
 .social-icon-link.icon-tel:hover {
-    box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+    box-shadow: 0 10px 20px rgba(34, 158, 217, 0.3);
 }
 
 .social-icon-link.icon-ig:hover {
-    box-shadow: 0 0 15px rgba(220, 39, 67, 0.5);
+    box-shadow: 0 10px 20px rgba(220, 39, 67, 0.3);
 }
 
 .social-icon-link.icon-x:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 20px rgba(26, 26, 26, 0.2);
 }
 
-/* --- RESPONSIVE MEDIA BREAKPOINTS --- */
+/* ==========================================================================
+   6. RESPONSIVE DEVICE CONTROLS
+   ========================================================================== */
 @media (max-width: 968px) {
+    .footer-node {
+        padding: 80px 24px 40px 24px;
+    }
+    
     .footer-content-wrap { 
         grid-template-columns: 1fr; 
-        gap: 40px;
+        gap: 48px;
     }
     
     .footer-brand-desc {
         max-width: 100%;
     }
+    
+    .footer-meta-contact h4,
+    .footer-social-section h4 {
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     .footer-node {
-        padding: 45px 6% 30px 6%;
+        padding: 60px 20px 36px 20px;
+    }
+    
+    .footer-brand {
+        font-size: 1.35rem;
+    }
+    
+    .contact-detail-row {
+        font-size: 0.95rem;
     }
 }

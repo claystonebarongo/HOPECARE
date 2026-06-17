@@ -25,7 +25,7 @@ export default function Footer() {
                 <div className="footer-meta-contact">
                     <h4>OUR SANCTUARY</h4>
                     <p className="contact-detail-row">
-                        <i className="fa-solid fa-location-dot map-marker-icon"></i> Kisii, Kenya
+                        <i className="fa-solid fa-location-dot map-marker-icon"></i> Kisii, Sengera
                     </p>
                     <p className="contact-detail-row">
                         <i className="fa-solid fa-church contact-vector-icon"></i> Faith & Hope Community Network
@@ -73,14 +73,7 @@ export default function Footer() {
                         </a>
 
                         {/* Real Instagram Aesthetic Icon Placeholder */}
-                        <a
-                            href="#instagram"
-                            onClick={(e) => e.preventDefault()}
-                            className="social-icon-link icon-ig"
-                            title="Instagram coming soon"
-                        >
-                            <i className="fa-brands fa-instagram"></i>
-                        </a>
+
 
                         {/* Real X / Twitter Aesthetic Icon Placeholder */}
                         {/* <a

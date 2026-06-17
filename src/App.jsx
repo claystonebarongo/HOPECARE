@@ -12,13 +12,13 @@ export default function App() {
   const [isAdminMode, setIsAdminMode] = useState(false);
   const [activeTab, setActiveTab] = useState('HOME');
 
-  // FIXED: Converted layout into a vertical flex column stretching down the viewport
+  // FIXED: Changed backgroundColor from dark #0a0f1e to #ffffff to seamlessly blend with your bright light mode sections
   const mainWrapperStyle = {
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
     width: '100%',
-    backgroundColor: '#0a0f1e',
+    backgroundColor: '#ffffff', // <-- Changed this from #0a0f1e to #ffffff
     position: 'relative',
     overflowX: 'hidden'
   };
@@ -26,7 +26,7 @@ export default function App() {
   const renderContent = () => {
     if (isAdminMode) {
       return (
-        <div style={{ padding: '120px 20px', textAlign: 'center', color: '#94a3b8' }}>
+        <div style={{ padding: '120px 20px', textAlign: 'center', color: '#1A1A1A' }}>
           <h2>Admin Content Engine Active</h2>
           <p>The structural codebase is ready. We can configure data binding routes here later.</p>
         </div>
@@ -40,7 +40,7 @@ export default function App() {
             <FounderStory />
           </>
         );
-      case 'MEDIA GALLERY': // FIXED: Added routing case matched to your updated Navbar choice
+      case 'MEDIA GALLERY':
         return (
           <>
             <MediaGallery />
@@ -76,9 +76,6 @@ export default function App() {
         setActiveTab={setActiveTab}
       />
 
-      {/* FIXED: Wrapped rendering blocks in a flex-grow main tag. 
-          This forces your tab content to claim all remaining empty space,
-          keeping the footer glued firmly to the bottom of the screen! */}
       <main style={{ flex: '1 0 auto', width: '100%' }}>
         {renderContent()}
       </main>

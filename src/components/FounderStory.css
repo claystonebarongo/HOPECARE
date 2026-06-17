@@ -1,5 +1,9 @@
+/* ==========================================================================
+   1. FOUNDER SECTION MAIN CANVAS
+   ========================================================================== */
 .founder-section {
-    padding: 60px 5%;
+    padding: 120px 0;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -7,135 +11,206 @@
 
 .founder-container {
     display: flex;
-    gap: 50px;
-    padding: 50px;
+    gap: 60px;
+    padding: 24px;
     align-items: center;
     flex-wrap: wrap;
 }
 
-/* Left Profile Frame */
+/* ==========================================================================
+   2. LEFT PROFILE FRAME (PREMIUM FROSTED MATTE GLASS)
+   ========================================================================== */
 .founder-image-frame {
-    flex: 1 1 350px; /* Gives it a baseline structure in the flex layout */
-    max-width: 100%; /* Prevents frame overflow on small mobile */
+    flex: 1 1 360px; 
+    max-width: 100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 30px;
-    background: rgba(15, 23, 42, 0.3);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    
+    /* Matte glass texture blueprint */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    /* Pristine layout framing borders */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 28px; /* Smooth elegant curves */
+    
+    /* Soft premium depth shadow */
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.03);
     box-sizing: border-box;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Gentle interactive pop on frame exposure */
+.founder-image-frame:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 50px rgba(255, 204, 0, 0.12);
 }
 
 .founder-placeholder-avatar {
-    font-size: 4rem;
-    background: rgba(16, 185, 129, 0.1);
-    border: 2px solid #10b981;
+    background: rgba(255, 204, 0, 0.08);
+    border: 1px solid rgba(255, 204, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
-    border-radius: 16px; /* Giving the frame matching sleek corners */
-    overflow: hidden; /* Keeps the inner image bounded neatly */
-    margin-bottom: 20px;
-    width: 100%; /* Lets it scale down gracefully on mobile */
-    max-width: 320px; /* Prevents it from getting absurdly huge on vast desktops */
-    aspect-ratio: 1 / 1; /* Locks it as a perfect crisp square */
+    border-radius: 24px; 
+    overflow: hidden; 
+    margin-bottom: 24px;
+    width: 100%; 
+    max-width: 260px; 
+    aspect-ratio: 1 / 1; 
+    box-shadow: 0 8px 24px rgba(255, 204, 0, 0.06);
 }
 
-/* FIXED RESPONSIVE CONTROLS FOR IMAGE */
 .founder-placeholder-avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.founder-image-frame:hover .founder-placeholder-avatar img {
+    transform: scale(1.04);
 }
 
 .founder-card-name {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 6px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1A1A1A; /* Sharp premium high-contrast title */
+    margin: 0 0 6px 0;
+    letter-spacing: -0.3px;
 }
 
 .founder-card-role {
-    color: #10b981;
-    font-size: 0.9rem;
-    font-weight: 600;
+    color: #E5B800; /* Signature premium gold label */
+    font-size: 0.75rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+    letter-spacing: 1.8px;
+    margin-bottom: 24px;
 }
 
 .founder-accent-line {
-    width: 60px;
+    width: 45px;
     height: 3px;
-    background: #10b981;
-    border-radius: 2px;
+    background: #FFCC00;
+    border-radius: 50px;
 }
 
-/* Right Content Column */
+/* ==========================================================================
+   3. RIGHT CONTENT COLUMN & CRISP TYPOGRAPHY
+   ========================================================================== */
 .founder-text-column {
     flex: 2 1 500px;
 }
 
 .founder-section-title {
-    font-size: 2.4rem;
+    font-size: 2.85rem;
     font-weight: 800;
-    color: #fff;
-    margin-bottom: 24px;
-    letter-spacing: -0.5px;
+    color: #1A1A1A;
+    margin: 0 0 28px 0;
+    letter-spacing: -0.8px;
+    line-height: 1.15;
 }
 
 .founder-narrative {
-    color: #cbd5e1;
-    font-size: 1.05rem;
-    line-height: 1.7;
+    color: #444444; /* Readable studio charcoal grey body */
+    font-size: 1.08rem;
+    line-height: 1.75;
     white-space: pre-line;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
+    font-weight: 400;
 }
 
+/* ==========================================================================
+   4. SCRIPTURE QUOTE HIGHLIGHT PANEL (GLASS ENHANCED)
+   ========================================================================== */
 .scripture-quote {
     display: flex;
-    gap: 15px;
-    background: rgba(16, 185, 129, 0.05);
-    border-left: 4px solid #10b981;
-    padding: 20px;
-    border-radius: 0 16px 16px 0;
+    gap: 18px;
+    
+    /* Matte glass overlay backing */
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    border-left: 4px solid #FFCC00; /* Gold anchor line */
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+    padding: 28px 32px;
+    border-radius: 4px 24px 24px 4px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.02);
 }
 
 .quote-mark {
-    font-size: 2.5rem;
-    color: #10b981;
-    line-height: 1;
+    font-size: 3rem;
+    color: #FFCC00;
+    line-height: 0.8;
     font-family: serif;
+    user-select: none;
 }
 
 .quote-text {
-    color: #e2e8f0;
+    color: #1A1A1A;
     font-style: italic;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.05rem;
+    line-height: 1.65;
     margin: 0;
+    font-weight: 500;
 }
 
 .quote-reference {
-    display: block;
+    display: inline-block;
     font-style: normal;
-    font-weight: 700;
-    font-size: 0.85rem;
-    color: #94a3b8;
-    margin-top: 6px;
+    font-weight: 800;
+    font-size: 0.78rem;
+    color: #E5B800;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 10px;
 }
 
-/* ADDED CLEANUP MEDIA QUERY FOR SMALL MOBILE DEVICES */
+/* ==========================================================================
+   5. RESPONSIVE ADAPTIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .founder-section {
+        padding: 80px 0;
+    }
+    .founder-section-title {
+        font-size: 2.25rem;
+    }
+}
+
 @media (max-width: 580px) {
     .founder-container {
-        padding: 25px 20px; /* Reduce container crowding on small phones */
-        gap: 30px;
+        padding: 16px;
+        gap: 40px;
+    }
+    
+    .founder-image-frame {
+        padding: 32px 20px;
+        border-radius: 24px;
     }
     
     .founder-section-title {
-        font-size: 1.8rem; /* Scale typography down slightly for mobile viewing */
+        font-size: 1.9rem;
+        letter-spacing: -0.4px;
+    }
+    
+    .founder-narrative {
+        font-size: 1.02rem;
+        line-height: 1.65;
+    }
+    
+    .scripture-quote {
+        padding: 24px;
+        border-radius: 4px 16px 16px 4px;
     }
 }

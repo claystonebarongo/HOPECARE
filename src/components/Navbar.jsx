@@ -32,10 +32,10 @@ export default function Navbar({ activeTab, setActiveTab }) {
 
             {/* Branding Zone - Updated Logo with Dove of Hope */}
             <div className="brand-zone" onClick={() => handleNavClick('HOME')} style={{ cursor: 'pointer' }}>
-                <span className="brand-logo">🕊️</span>
+                <span className="brand-logo" style={{ filter: 'grayscale(1) brightness(0)' }}>🕊️</span>
                 <div>
                     <h1 className="brand-title">Hope Care</h1>
-                    <p className="brand-subtitle">Orphanage Kisii</p>
+                    <p className="brand-subtitle">Orphanage Kisii Kenya</p>
                 </div>
             </div>
 

@@ -1,235 +1,285 @@
+/* ==========================================================================
+   1. MAIN SECTION CANVAS & INNER BOUNDING BOX
+   ========================================================================== */
 .impact-section-container {
-    padding: 100px 5% 80px 5%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 120px 0 100px 0;
+    width: 100%;
     position: relative;
     z-index: 10;
+    /* FIXED: Changed from pure blinding white to a professional tech studio off-white */
+    background-color: #f8fafc; 
 }
 
-/* Header Blocks */
+.impact-inner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. HEADER STRUCTURE
+   ========================================================================== */
 .impact-header-zone {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .impact-badge {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 800;
-    letter-spacing: 2px;
-    color: #10b981;
-    background: rgba(16, 185, 129, 0.1);
-    padding: 5px 14px;
-    border-radius: 30px;
-    border: 1px solid rgba(16, 185, 129, 0.2);
+    letter-spacing: 2.5px;
+    color: #1A1A1A; 
+    background: #FFCC00; 
+    padding: 8px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 0 4px 14px rgba(255, 204, 0, 0.25);
+    margin-bottom: 18px;
 }
 
 .impact-main-title {
-    font-size: 2.5rem;
+    font-size: 2.85rem;
     font-weight: 800;
-    color: #fff;
-    margin: 15px 0;
+    color: #1A1A1A; 
+    margin: 12px 0 20px 0;
+    letter-spacing: -0.5px;
+    line-height: 1.15;
 }
 
 .impact-subtitle {
-    font-size: 1.1rem;
-    color: #94a3b8;
-    max-width: 600px;
+    font-size: 1.15rem;
+    color: #555555; 
+    max-width: 580px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 1.65;
+    font-weight: 500;
 }
 
-/* Impact Dynamic Grid Layout */
+/* ==========================================================================
+   3. MODERN PREMIUM MATTE GLASS CARDS (WHOLE CARD IS CLICKABLE)
+   ========================================================================== */
 .impact-grid-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin-bottom: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 36px;
+    margin-bottom: 90px;
 }
 
 .impact-card-wrapper {
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 18px;
+    /* FIXED: Implemented Premium Frosted Matte Glass Properties */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Clean subtle edge border to frame the glass layout */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px; 
     overflow: hidden;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+    
+    /* Ultra soft shadow profile mimicking real physical depth */
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+    
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.4s ease, 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+                background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    outline: none;
 }
 
+/* Soft transition lift on hover - entirely smooth and pleasing to the eye */
 .impact-card-wrapper:hover {
     transform: translateY(-6px);
-    border-color: rgba(16, 185, 129, 0.3);
+    background: rgba(255, 255, 255, 0.98);
+    border-color: #FFCC00; 
+    box-shadow: 0 20px 40px rgba(255, 204, 0, 0.1);
 }
 
-/* Crisp Image Frames */
+/* Accessible focus outline layer */
+.impact-card-wrapper:focus-visible {
+    border-color: #FFCC00;
+    box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.25);
+}
+
+/* ==========================================================================
+   4. IMAGE FRAME LAYOUT - CRUNCHY AND NATURAL
+   ========================================================================== */
 .impact-image-frame {
     width: 100%;
-    height: 190px;
+    height: 240px;
     position: relative;
     overflow: hidden;
+    background: #e2e8f0;
 }
 
 .impact-bg-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .impact-card-wrapper:hover .impact-bg-photo {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
+/* DELETED: Glare overlays completely stripped to retain crystal clear photos */
 .impact-photo-tint {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent 30%, rgba(15, 23, 42, 0.95));
+    display: none;
 }
 
+/* ==========================================================================
+   5. TEXT CONTENT CARDS
+   ========================================================================== */
 .impact-card-body {
-    padding: 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .impact-card-title {
-    font-size: 1.3rem;
-    color: #fff;
+    font-size: 1.4rem;
+    color: #1A1A1A; 
     margin: 0 0 12px 0;
     font-weight: 700;
+    letter-spacing: -0.3px;
+    transition: color 0.3s ease;
+}
+
+.impact-card-wrapper:hover .impact-card-title {
+    color: #E5B800;
 }
 
 .impact-card-desc {
-    font-size: 0.95rem;
-    color: #cbd5e1;
-    line-height: 1.55;
-    margin-bottom: 20px;
+    font-size: 0.98rem;
+    color: #555555; 
+    line-height: 1.6;
+    margin: 0;
 }
 
-.impact-unpack-link {
-    background: transparent;
-    border: none;
-    color: #34d399;
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    padding: 0;
-    transition: color 0.2s ease, transform 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-}
-
-.impact-unpack-link:hover {
-    color: #10b981;
-    text-decoration: underline;
-    transform: translateX(4px);
-}
-
-/* Founder Testimony Profile Presentation Styling */
+/* ==========================================================================
+   6. FOUNDER PROFILE ROW BLOCK (GLASS DESIGNED)
+   ========================================================================== */
 .founder-testimony-block {
-    background: rgba(15, 23, 42, 0.8);
-    border-left: 4px solid #10b981;
-    border-radius: 0 20px 20px 0;
-    padding: 40px;
-    margin-top: 40px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.03);
-    border-right: 1px solid rgba(255, 255, 255, 0.03);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    /* FIXED: Shifted testimony module to premium matte frosted glass tier as well */
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    border-left: 5px solid #FFCC00; 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    
+    border-radius: 12px 32px 32px 12px;
+    padding: 50px;
+    margin-top: 60px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.03);
 }
 
 .founder-meta {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
+    gap: 18px;
+    margin-bottom: 30px;
 }
 
 .founder-avatar-placeholder {
-    width: 54px;
-    height: 54px;
-    background: rgba(16, 185, 129, 0.15);
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 204, 0, 0.12);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
-    border: 1px solid rgba(16, 185, 129, 0.3);
+    font-size: 1.6rem;
+    border: 1.5px solid rgba(255, 204, 0, 0.35);
 }
 
 .founder-name {
-    font-size: 1.3rem;
-    color: #fff;
+    font-size: 1.4rem;
+    color: #1A1A1A;
     margin: 0;
     font-weight: 700;
+    letter-spacing: -0.3px;
 }
 
 .founder-title {
-    font-size: 0.85rem;
-    color: #10b981;
-    margin: 3px 0 0 0;
-    font-weight: 600;
+    font-size: 0.88rem;
+    color: #E5B800; 
+    margin: 4px 0 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .founder-speech {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #f1f5f9;
+    font-size: 1.2rem;
+    line-height: 1.75;
+    color: #1A1A1A;
     font-style: italic;
-    margin: 0 0 24px 0;
+    margin: 0 0 28px 0;
+    font-weight: 500;
 }
 
 .founder-speech-extended {
     font-size: 1.05rem;
     line-height: 1.7;
-    color: #cbd5e1;
+    color: #555555;
     margin: 0;
 }
 
 .scripture-badge {
     display: inline-block;
-    margin-top: 25px;
-    font-size: 0.8rem;
+    margin-top: 30px;
+    font-size: 0.82rem;
     font-weight: 700;
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.2);
-    padding: 6px 14px;
-    border-radius: 30px;
-    color: #34d399;
+    background: rgba(255, 204, 0, 0.08);
+    border: 1px solid rgba(255, 204, 0, 0.25);
+    padding: 8px 18px;
+    border-radius: 50px;
+    color: #1A1A1A;
 }
 
-/* Lightbox Sub-Modal Window Architecture */
+/* ==========================================================================
+   7. MODAL OVERLAY LIGHTBOX ENGINE
+   ========================================================================== */
 .story-lightbox-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(8, 10, 18, 0.88);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.3); 
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     z-index: 5000;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 24px;
 }
 
 .story-lightbox-panel {
-    background: #0f172a;
+    background: #ffffff; 
     width: 100%;
-    max-width: 680px;
-    border-radius: 24px;
+    max-width: 700px;
+    border-radius: 32px;
     overflow: hidden;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
-    animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 40px 90px rgba(15, 23, 42, 0.15);
+    animation: modalFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes modalFadeIn {
     from {
         opacity: 0;
-        transform: scale(0.96) translateY(10px);
+        transform: scale(0.95) translateY(15px);
     }
     to {
         opacity: 1;
@@ -239,34 +289,37 @@
 
 .story-lightbox-close {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(0, 0, 0, 0.6);
+    top: 20px;
+    right: 20px;
+    background: #ffffff;
     border: none;
-    color: #fff;
+    color: #1A1A1A;
     font-size: 1.1rem;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 5200;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s ease, transform 0.2s ease;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .story-lightbox-close:hover {
     background: #ef4444;
+    color: #ffffff;
     border-color: transparent;
-    transform: scale(1.05);
+    transform: scale(1.08) rotate(90deg);
 }
 
 .story-modal-hero {
     position: relative;
     width: 100%;
-    height: 260px;
+    height: 300px;
+    background: #f1f5f9;
 }
 
 .story-modal-img {
@@ -281,27 +334,26 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 20%, #0f172a 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, #ffffff 100__);
 }
 
 .story-modal-header-title {
     position: absolute;
-    bottom: 20px;
-    left: 30px;
-    font-size: 2rem;
-    color: #fff;
+    bottom: 24px;
+    left: 36px;
+    font-size: 2.2rem;
+    color: #1A1A1A; 
     margin: 0;
     font-weight: 800;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    letter-spacing: -0.5px;
 }
 
 .story-modal-content-pane {
-    padding: 30px;
-    max-height: 60vh;
+    padding: 36px 40px 40px 40px;
+    max-height: 55vh;
     overflow-y: auto;
 }
 
-/* Subtle scrollbar design for modal content window */
 .story-modal-content-pane::-webkit-scrollbar {
     width: 6px;
 }
@@ -309,42 +361,55 @@
     background: transparent;
 }
 .story-modal-content-pane::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.12);
     border-radius: 10px;
 }
 
 .story-modal-tag {
     font-size: 0.75rem;
-    color: #10b981;
+    color: #E5B800; 
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 6px;
 }
 
 .story-modal-longtext {
-    font-size: 1.05rem;
-    color: #cbd5e1;
-    line-height: 1.7;
+    font-size: 1.08rem;
+    color: #444444;
+    line-height: 1.75;
     margin: 12px 0 28px 0;
 }
 
 .story-modal-callout {
-    background: rgba(16, 185, 129, 0.05);
-    border-left: 3px solid #10b981;
-    padding: 20px;
-    border-radius: 0 14px 14px 0;
-    font-size: 0.95rem;
-    color: #f1f5f9;
-    line-height: 1.6;
-    border-top: 1px solid rgba(16, 185, 129, 0.08);
-    border-right: 1px solid rgba(16, 185, 129, 0.08);
-    border-bottom: 1px solid rgba(16, 185, 129, 0.08);
+    background: rgba(255, 204, 0, 0.04);
+    border-left: 4px solid #FFCC00;
+    padding: 24px;
+    border-radius: 4px 16px 16px 4px;
+    font-size: 1rem;
+    color: #1A1A1A;
+    line-height: 1.65;
+    border-top: 1px solid rgba(255, 204, 0, 0.06);
+    border-right: 1px solid rgba(255, 204, 0, 0.06);
+    border-bottom: 1px solid rgba(255, 204, 0, 0.06);
+}
+
+/* ==========================================================================
+   8. RESPONSIVE Breakpoints
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .impact-grid-layout {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+    }
 }
 
 @media (max-width: 768px) {
-    .impact-section-container { padding: 60px 4% 40px 4%; }
-    .impact-main-title { font-size: 2rem; }
-    .founder-testimony-block { padding: 25px; border-radius: 12px; }
-    .story-modal-header-title { font-size: 1.5rem; left: 20px; }
-    .story-modal-content-pane { padding: 20px; }
+    .impact-section-container { padding: 80px 0 60px 0; }
+    .impact-main-title { font-size: 2.15rem; }
+    .founder-testimony-block { padding: 32px 24px; border-radius: 16px; margin-top: 40px; }
+    .story-modal-header-title { font-size: 1.65rem; left: 24px; bottom: 16px; }
+    .story-modal-content-pane { padding: 24px; }
+    .story-lightbox-panel { border-radius: 24px; }
 }

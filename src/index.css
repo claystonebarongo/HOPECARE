@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --primary: #10b981; /* Emerald glow color */
-  --primary-hover: #34d399;
-  --glass-bg: rgba(255, 255, 255, 0.04);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-blur: blur(16px);
+  --primary: #FFCC00; /* Signature Brand Yellow */
+  --primary-hover: #E5B800; /* Rich Deeper Gold */
+  --text-dark: #1A1A1A; /* Premium Deep Charcoal for ultimate contrast */
+  --text-muted: #555555; /* Highly readable body gray */
+  --clean-bg: #ffffff; /* Brilliant white core background */
+  --subtle-border: rgba(0, 0, 0, 0.08); /* Crisp, light container divider */
 }
 
 * {
@@ -17,58 +18,59 @@
 
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  color: #ffffff;
-  background-color: #0b0f19;
+  color: var(--text-dark); /* Flips global text color to dark charcoal */
+  background-color: var(--clean-bg); /* Forces the dark void to turn completely white! */
   overflow-x: hidden;
 }
 
-/* Master Glass Container Engine */
+/* Master Engine - Upgraded from dark glass to a premium, crisp light-mode card layer */
 .glass-panel {
-  background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border: 1px solid var(--glass-border);
+  background: #ffffff;
+  border: 1px solid var(--subtle-border);
   border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04); /* Soft modern depth shadow instead of dark glass */
 }
 
+/* Transformed Navigation Layer to match the white bar in your image layout */
 .glass-nav {
-  background: rgba(11, 15, 25, 0.6);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
-  border-bottom: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--subtle-border);
 }
 
-/* Action Inputs and Buttons */
+/* Action Inputs and Buttons - Completely rebranded to high-contrast Yellow */
 .btn-glow {
   background: var(--primary);
-  color: #0b0f19;
-  font-weight: 700;
+  color: var(--text-dark); /* High visibility text */
+  font-weight: 800;
   padding: 12px 28px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 4px 14px rgba(255, 204, 0, 0.3);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-glow:hover {
   background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(52, 211, 153, 0.6);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.45);
 }
 
+/* Clear mode balanced secondary outline button */
 .btn-outline {
-  background: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
-  font-weight: 600;
+  background: transparent;
+  color: var(--text-dark);
+  font-weight: 700;
   padding: 12px 28px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--text-dark);
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: #ffffff;
+  background: var(--text-dark);
+  color: #ffffff;
 }

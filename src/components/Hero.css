@@ -8,6 +8,7 @@
     padding: 120px 20px 60px 20px;
     box-sizing: border-box;
     overflow: hidden;
+    background-color: #ffffff; /* Base fallback color matches Yellow Africa */
 }
 
 /* Background Slider Layout */
@@ -41,14 +42,14 @@
     z-index: 2;
 }
 
-/* Clean, thin black tint layer to reduce sharp brightness and maximize word legibility */
+/* Lightened slightly (from 0.45 to 0.35) to satisfy the boss's request and make the section brighter */
 .hero-darkness-shroud {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.35);
     z-index: 3;
 }
 
@@ -67,19 +68,19 @@
     box-shadow: none !important;
 }
 
+/* Swapped dark background pill for a high-contrast Brand Yellow pill with charcoal text */
 .org-tag {
     display: inline-block;
     font-size: 0.8rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 2px;
-    color: #34d399;
+    color: #1A1A1A; /* Deep Charcoal */
     text-transform: uppercase;
-    background: rgba(10, 15, 30, 0.6);
-    padding: 6px 18px;
+    background: #FFCC00; /* Brand Yellow */
+    padding: 6px 20px;
     border-radius: 20px;
     margin-bottom: 25px;
-    border: 1px solid rgba(52, 211, 153, 0.4);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 14px rgba(255, 204, 0, 0.3);
 }
 
 .hero-title {
@@ -89,13 +90,15 @@
     letter-spacing: -0.5px;
     color: #fff;
     margin: 0 0 24px 0;
-    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.85), 0 2px 4px rgba(0, 0, 0, 0.9);
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.65), 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* Gradient highlight now flows flawlessly from brand yellow into bright gold */
 .gradient-highlight {
-    background: linear-gradient(45deg, #10b981, #34d399);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(45deg, #FFCC00, #FFE066); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    color: #f1f5f9;
 }
 
 .hero-desc {
@@ -104,7 +107,7 @@
     line-height: 1.65;
     max-width: 660px;
     margin: 0 auto 40px auto;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.95);
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .hero-btn-group {
@@ -114,23 +117,26 @@
     flex-wrap: wrap;
 }
 
+/* Button transformed into standard high-contrast brand yellow */
 .btn-hero-width {
     min-width: 210px;
     padding: 14px 28px;
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 0.5px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.25s ease;
-    background: #10b981;
+    background: #FFCC00; /* Brand Yellow */
     border: none;
-    color: #fff;
+    color: #1A1A1A; /* Deep Charcoal for crisp readability */
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.25);
 }
 
 .btn-hero-width:hover {
-    background: #059669;
+    background: #E5B800; /* Rich deeper yellow on hover */
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 204, 0, 0.4);
 }
 
 .play-arrow {
@@ -138,14 +144,14 @@
     font-size: 0.85rem;
 }
 
-/* Lightbox styles remain rock solid */
+/* Lightbox styles optimized for high contrast */
 .lightbox-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(8, 10, 18, 0.95);
+    background: rgba(10, 10, 15, 0.96);
     backdrop-filter: blur(12px);
     z-index: 10000;
     display: flex;
@@ -196,7 +202,7 @@
     transform: scale(1.05);
 }
 
-/* CRISP STYLING FORCE FOR THE NATIVE VIDEO LAYER */
+/* Native Video Frame */
 .lightbox-video-element {
     width: 100%;
     height: 100%;

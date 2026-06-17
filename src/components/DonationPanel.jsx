@@ -132,7 +132,7 @@ export default function DonationPanel() {
 
                     {/* Primary Explicit Call to Action Trigger */}
                     <a href="tel:+254746475311" className="donate-now-action-btn">
-                        💖 Donate Now
+                        Donate Now
                     </a>
 
                 </div>
