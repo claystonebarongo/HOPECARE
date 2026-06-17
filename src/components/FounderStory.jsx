@@ -10,7 +10,7 @@ export default function FounderStory() {
                 <div className="founder-image-frame">
                     <div className="founder-placeholder-avatar">
 
-                        <img src="public/assets/gallery/IMG-20260616-WA0149.jpg" alt="" className='yoo' />
+                        <img src="assets/gallery/IMG-20260616-WA0149.jpg" alt="" className='yoo' />
 
                     </div>
                     <h3 className="founder-card-name">{infoData.founder.name}</h3>
