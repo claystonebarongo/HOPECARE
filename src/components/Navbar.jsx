@@ -16,17 +16,20 @@ export default function Navbar({ activeTab, setActiveTab }) {
         setActiveTab('IMPACT');
         setMenuOpen(false);
 
-        // Wait briefly for App.jsx to render the IMPACT sections, then scroll down cleanly
+        // Wait briefly for App.jsx to switch tabs, then track layout and scroll down cleanly
         setTimeout(() => {
-            const donationSection = document.querySelector('.donation-section');
+            // Checks for the specific donation target, or falls back to the master impact container
+            const donationSection = document.querySelector('.donation-section') || document.querySelector('.impact-section-container');
             if (donationSection) {
                 donationSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
-        }, 100);
+        }, 150); // Slightly increased timeout to guarantee DOM paint on slower mobile browsers
     };
 
     return (
-        <nav className="glass-nav navbar-container">
+        /* FIXED: Added menuOpen class to the parent wrapper so CSS can safely target child elements */
+        <nav className={`glass-nav navbar-container ${menuOpen ? 'nav-menu-open' : ''}`}>
+
             {/* Branding Zone - Updated Logo with Dove of Hope */}
             <div className="brand-zone" onClick={() => handleNavClick('HOME')} style={{ cursor: 'pointer' }}>
                 <span className="brand-logo">🕊️</span>
