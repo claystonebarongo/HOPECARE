@@ -1,0 +1,141 @@
+.founder-section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.founder-container {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left Profile Frame */
+.founder-image-frame {
+    flex: 1 1 350px; /* Gives it a baseline structure in the flex layout */
+    max-width: 100%; /* Prevents frame overflow on small mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: rgba(15, 23, 42, 0.3);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+.founder-placeholder-avatar {
+    font-size: 4rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 2px solid #10b981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.2);
+    border-radius: 16px; /* Giving the frame matching sleek corners */
+    overflow: hidden; /* Keeps the inner image bounded neatly */
+    margin-bottom: 20px;
+    width: 100%; /* Lets it scale down gracefully on mobile */
+    max-width: 320px; /* Prevents it from getting absurdly huge on vast desktops */
+    aspect-ratio: 1 / 1; /* Locks it as a perfect crisp square */
+}
+
+/* FIXED RESPONSIVE CONTROLS FOR IMAGE */
+.founder-placeholder-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.founder-card-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.founder-card-role {
+    color: #10b981;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.founder-accent-line {
+    width: 60px;
+    height: 3px;
+    background: #10b981;
+    border-radius: 2px;
+}
+
+/* Right Content Column */
+.founder-text-column {
+    flex: 2 1 500px;
+}
+
+.founder-section-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.founder-narrative {
+    color: #cbd5e1;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    white-space: pre-line;
+    margin-bottom: 30px;
+}
+
+.scripture-quote {
+    display: flex;
+    gap: 15px;
+    background: rgba(16, 185, 129, 0.05);
+    border-left: 4px solid #10b981;
+    padding: 20px;
+    border-radius: 0 16px 16px 0;
+}
+
+.quote-mark {
+    font-size: 2.5rem;
+    color: #10b981;
+    line-height: 1;
+    font-family: serif;
+}
+
+.quote-text {
+    color: #e2e8f0;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote-reference {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 6px;
+}
+
+/* ADDED CLEANUP MEDIA QUERY FOR SMALL MOBILE DEVICES */
+@media (max-width: 580px) {
+    .founder-container {
+        padding: 25px 20px; /* Reduce container crowding on small phones */
+        gap: 30px;
+    }
+    
+    .founder-section-title {
+        font-size: 1.8rem; /* Scale typography down slightly for mobile viewing */
+    }
+}

@@ -1,0 +1,350 @@
+.impact-section-container {
+    padding: 100px 5% 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header Blocks */
+.impact-header-zone {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.impact-badge {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    padding: 5px 14px;
+    border-radius: 30px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.impact-main-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 15px 0;
+}
+
+.impact-subtitle {
+    font-size: 1.1rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Impact Dynamic Grid Layout */
+.impact-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.impact-card-wrapper {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+}
+
+.impact-card-wrapper:hover {
+    transform: translateY(-6px);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Crisp Image Frames */
+.impact-image-frame {
+    width: 100%;
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-bg-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.impact-card-wrapper:hover .impact-bg-photo {
+    transform: scale(1.05);
+}
+
+.impact-photo-tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 30%, rgba(15, 23, 42, 0.95));
+}
+
+.impact-card-body {
+    padding: 24px;
+}
+
+.impact-card-title {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0 0 12px 0;
+    font-weight: 700;
+}
+
+.impact-card-desc {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+.impact-unpack-link {
+    background: transparent;
+    border: none;
+    color: #34d399;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.impact-unpack-link:hover {
+    color: #10b981;
+    text-decoration: underline;
+    transform: translateX(4px);
+}
+
+/* Founder Testimony Profile Presentation Styling */
+.founder-testimony-block {
+    background: rgba(15, 23, 42, 0.8);
+    border-left: 4px solid #10b981;
+    border-radius: 0 20px 20px 0;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-right: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.founder-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.founder-avatar-placeholder {
+    width: 54px;
+    height: 54px;
+    background: rgba(16, 185, 129, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.founder-name {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+}
+
+.founder-title {
+    font-size: 0.85rem;
+    color: #10b981;
+    margin: 3px 0 0 0;
+    font-weight: 600;
+}
+
+.founder-speech {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f1f5f9;
+    font-style: italic;
+    margin: 0 0 24px 0;
+}
+
+.founder-speech-extended {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin: 0;
+}
+
+.scripture-badge {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 6px 14px;
+    border-radius: 30px;
+    color: #34d399;
+}
+
+/* Lightbox Sub-Modal Window Architecture */
+.story-lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(8, 10, 18, 0.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.story-lightbox-panel {
+    background: #0f172a;
+    width: 100%;
+    max-width: 680px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
+    animation: modalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.story-lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.story-lightbox-close:hover {
+    background: #ef4444;
+    border-color: transparent;
+    transform: scale(1.05);
+}
+
+.story-modal-hero {
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+.story-modal-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story-modal-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 20%, #0f172a 100%);
+}
+
+.story-modal-header-title {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.story-modal-content-pane {
+    padding: 30px;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+/* Subtle scrollbar design for modal content window */
+.story-modal-content-pane::-webkit-scrollbar {
+    width: 6px;
+}
+.story-modal-content-pane::-webkit-scrollbar-track {
+    background: transparent;
+}
+.story-modal-content-pane::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.story-modal-tag {
+    font-size: 0.75rem;
+    color: #10b981;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.story-modal-longtext {
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin: 12px 0 28px 0;
+}
+
+.story-modal-callout {
+    background: rgba(16, 185, 129, 0.05);
+    border-left: 3px solid #10b981;
+    padding: 20px;
+    border-radius: 0 14px 14px 0;
+    font-size: 0.95rem;
+    color: #f1f5f9;
+    line-height: 1.6;
+    border-top: 1px solid rgba(16, 185, 129, 0.08);
+    border-right: 1px solid rgba(16, 185, 129, 0.08);
+    border-bottom: 1px solid rgba(16, 185, 129, 0.08);
+}
+
+@media (max-width: 768px) {
+    .impact-section-container { padding: 60px 4% 40px 4%; }
+    .impact-main-title { font-size: 2rem; }
+    .founder-testimony-block { padding: 25px; border-radius: 12px; }
+    .story-modal-header-title { font-size: 1.5rem; left: 20px; }
+    .story-modal-content-pane { padding: 20px; }
+}

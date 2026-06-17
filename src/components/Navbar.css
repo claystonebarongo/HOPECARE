@@ -1,0 +1,139 @@
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Branding Zone */
+.brand-zone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    font-size: 1.6rem;
+}
+
+.brand-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin: 0;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    color: #10b981;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Nav Actions Link Zone */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.text-active {
+    color: #fff;
+}
+
+.text-muted {
+    color: #94a3b8;
+}
+
+.text-muted:hover {
+    color: #fff;
+}
+
+.admin-toggle {
+    background: transparent;
+    border: none;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.admin-toggle:hover {
+    color: #94a3b8;
+}
+
+/* Mobile Hamburger Architecture */
+.hamburger-trigger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.hamburger-trigger span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Transform Bars into an 'X' close indicator when opened */
+.hamburger-trigger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger-trigger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-trigger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Breakpoint for Mobile Screens */
+@media (max-width: 768px) {
+    .hamburger-trigger {
+        display: flex;
+    }
+
+    .nav-actions {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(10, 15, 30, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-actions.mobile-show {
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
