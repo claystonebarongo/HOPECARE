@@ -117,7 +117,7 @@ export default function DonationPanel() {
                                 <div className="routing-row">
                                     <span className="row-label">ACCOUNT NAME:</span>
                                     {/* FIXED: Formatted brand name cleanly to professional layout standards */}
-                                    <span className="row-val">Hope Care Orphanage Kisii</span>
+                                    <span className="row-val">Hope caorpha kisike</span>
                                 </div>
                                 <div className="routing-row">
                                     <span className="row-label">ACCOUNT NUMBER:</span>
