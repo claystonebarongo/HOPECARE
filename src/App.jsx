@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import FaithSection from './components/FaithSection';
+import EducationSection from './components/EducationSection';
+import FoodSection from './components/FoodSection';
+import CrusadeSection from './components/CrusadeSection';
 import ImpactPillars from './components/ImpactPillars';
 import FounderStory from './components/FounderStory';
 import MediaGallery from './components/MediaGallery';
@@ -38,18 +42,22 @@ export default function App() {
         return (
           <>
             <FounderStory />
+            <FaithSection />
           </>
         );
       case 'MEDIA GALLERY':
         return (
           <>
             <MediaGallery />
+            <CrusadeSection />
           </>
         );
       case 'IMPACT':
         return (
           <>
             <ImpactPillars />
+            <EducationSection />
+            <FoodSection />
             <DonationPanel />
           </>
         );
@@ -58,8 +66,12 @@ export default function App() {
         return (
           <>
             <Hero setActiveTab={setActiveTab} />
+            <FaithSection />
             <ImpactPillars />
+            <EducationSection />
+            <FoodSection />
             <FounderStory />
+            <CrusadeSection />
             <MediaGallery />
             <DonationPanel />
           </>

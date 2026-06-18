@@ -71,22 +71,54 @@ export default function Footer() {
                         >
                             <i className="fa-solid fa-phone-flip"></i>
                         </a>
-
-                        {/* Real Instagram Aesthetic Icon Placeholder */}
-
-
-                        {/* Real X / Twitter Aesthetic Icon Placeholder */}
-                        {/* <a
-                            href="#x"
-                            onClick={(e) => e.preventDefault()}
-                            className="social-icon-link icon-x"
-                            title="X / Twitter coming soon"
-                        >
-                            <i className="fa-brands fa-x-twitter"></i>
-                        </a> */}
                     </div>
                 </div>
 
+            </div>
+
+            {/* ==========================================================================
+               PREMIUM DEVELOPER CREDIT BLOCK
+               ========================================================================== */}
+            <div className="dev-credit-anchor">
+                <div className="dev-credit-divider" />
+                <div className="dev-credit-flex">
+                    <p className="dev-signature">
+                        Designed & Developed by <span className="dev-highlight">Claystone Barongo</span>
+                    </p>
+
+                    <div className="dev-social-mesh">
+                        {/* WHATSAPP DEV LINK */}
+                        <a
+                            href="https://wa.me/254707236430"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="dev-icon-node"
+                            title="Chat with the Developer on WhatsApp"
+                        >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+                        </a>
+
+                        {/* INSTAGRAM DEV LINK */}
+                        <a
+                            href="https://instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="dev-icon-node"
+                            title="Follow Developer on Instagram"
+                        >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
+                        </a>
+
+                        {/* EMAIL DEV LINK */}
+                        <a
+                            href="mailto:claystonebarongo@gmail.com?subject=Website%20Inquiry"
+                            className="dev-icon-node"
+                            title="Email the Developer"
+                        >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     );
