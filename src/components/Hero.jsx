@@ -14,10 +14,10 @@ export default function Hero({ setActiveTab }) {
         "/assets/backgrounds/IMG-20260616-WA0223.jpg"
     ];
 
-    // ROOT PATH RESOLUTION: Maps directly to public/assets/videos/
+
     const localVideoSource = "/assets/videos/VID-20260616-WA0209.mp4";
 
-    // Auto-advance loop for background cross-fade transition
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentBgIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
@@ -27,7 +27,7 @@ export default function Hero({ setActiveTab }) {
 
     return (
         <section className="hero-container">
-            {/* Background Slideshow Engine */}
+
             <div className="hero-slider-track">
                 {backgroundImages.map((imgUrl, index) => (
                     <div
