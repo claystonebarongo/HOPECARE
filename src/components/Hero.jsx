@@ -73,7 +73,6 @@ export default function Hero({ setActiveTab }) {
                 </div>
             </div>
 
-            {/* Cinematic Video Overlay Lightbox */}
             {showVideo && (
                 <div className="lightbox-overlay" onClick={() => setShowVideo(false)}>
                     <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
