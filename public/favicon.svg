@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Beautiful teal background gradient -->
+    <linearGradient id="doveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Smooth rounded square icon background -->
+  <rect width="512" height="512" rx="110" fill="url(#doveGrad)" />
+  
+  <!-- Clean, professional White Dove in flight -->
+  <g transform="translate(40, 40) scale(0.85)">
+    <path d="M160 280 
+             C 140 220, 90 190, 50 180 
+             C 90 210, 120 260, 150 310 
+             C 120 340, 80 370, 40 390 
+             C 90 380, 140 350, 170 320 
+             C 190 350, 220 390, 250 430 
+             C 240 380, 220 330, 200 290 
+             C 270 270, 360 250, 440 210 
+             C 410 200, 350 200, 300 210 
+             C 340 150, 390 80, 430 30 
+             C 370 70, 310 130, 270 190 
+             C 240 160, 200 130, 160 110 
+             C 180 150, 200 200, 200 240 
+             C 170 250, 162 265, 160 280 Z" 
+          fill="#ffffff" 
+          stroke="#ffffff" 
+          stroke-width="4" 
+          stroke-linejoin="round" />
+    
+    <!-- Small elegant olive branch accent in its beak -->
+    <path d="M440 210 C 455 205, 470 205, 480 210 M450 208 C 452 200, 460 198, 465 202 M465 209 C 470 205, 475 208, 473 215" 
+          stroke="#2dd4bf" 
+          stroke-width="6" 
+          stroke-linecap="round" 
+          fill="none" />
+  </g>
+</svg>
