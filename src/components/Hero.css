@@ -93,7 +93,7 @@
     text-shadow: 0 4px 16px rgba(0, 0, 0, 0.65), 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Gradient highlight now flows flawlessly from brand yellow into bright gold */
+
 .gradient-highlight {
     /* background: linear-gradient(45deg, #FFCC00, #FFE066); */
     /* -webkit-background-clip: text; */
@@ -117,7 +117,7 @@
     flex-wrap: wrap;
 }
 
-/* Button transformed into standard high-contrast brand yellow */
+
 .btn-hero-width {
     min-width: 210px;
     padding: 14px 28px;
