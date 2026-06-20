@@ -6,7 +6,7 @@ export default function Hero({ setActiveTab }) {
     const [showVideo, setShowVideo] = useState(false);
     const [currentBgIndex, setCurrentBgIndex] = useState(0);
 
-    // Dynamic high-impact background sequence
+
     const backgroundImages = [
         "/assets/backgrounds/IMG-20260616-WA0171.jpg",
         "/assets/backgrounds/IMG-20260616-WA0172.jpg",
