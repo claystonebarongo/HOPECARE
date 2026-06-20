@@ -8,10 +8,10 @@
     padding: 120px 20px 60px 20px;
     box-sizing: border-box;
     overflow: hidden;
-    background-color: #ffffff; /* Base fallback color matches Yellow Africa */
+    background-color: #ffffff; 
 }
 
-/* Background Slider Layout */
+
 .hero-slider-track {
     position: absolute;
     top: 0;
