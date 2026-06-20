@@ -39,7 +39,7 @@ export default function Hero({ setActiveTab }) {
                 <div className="hero-darkness-shroud" />
             </div>
 
-            {/* Central Super Glass Display Card */}
+
             <div className="glass-panel hero-card">
                 <span className="org-tag">
                     {infoData.organization?.name || "HOPE CARE ORPHANAGE KISII KENYA"}
