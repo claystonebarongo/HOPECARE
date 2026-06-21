@@ -29,8 +29,8 @@ export default function EducationSection() {
                         </a>
                     </div>
 
-                    {/* RIGHT SIDE: THE 3-PHOTO MASONRY GRID (UNIFORM ASSETS) */}
                     <div className="edu-gallery-side">
+
                         <div className="edu-grid-wrapper">
                             <div className="edu-img-card card-large">
                                 <img src="/assets/gallery/Education1.jpg" alt="Children wearing uniforms" />
