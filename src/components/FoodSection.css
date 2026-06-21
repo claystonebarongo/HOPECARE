@@ -107,7 +107,7 @@
     transform: scale(1.04);
 }
 
-/* Left-sided asymmetric grid positioning */
+
 .food-card-large {
     grid-row: 1 / span 2;
 }
