@@ -9,17 +9,17 @@
     box-sizing: border-box;
 }
 
-/* New defensive wrapper layer matching the update in your JSX file */
+
 .donation-inner-wrapper {
     max-width: 1200px;
-    width: 90%; /* Creates a clean, protective gap on both sides of the screen */
+    width: 90%; 
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 .donation-container {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr; /* Re-balanced focus column scales */
+    grid-template-columns: 1.15fr 0.85fr; 
     gap: 60px;
     align-items: start;
 }
@@ -342,10 +342,10 @@
         padding: 40px 0;
     }
     .donation-inner-wrapper {
-        width: 92%; /* Clean margin safety padding logic for screen edges */
+        width: 92%; 
     }
     .donation-main-title {
-        font-size: 1.8rem; /* Smooth, scaled down typography to eliminate awkward line wrap gaps */
+        font-size: 1.8rem; 
         letter-spacing: -0.8px;
     }
     .story-image-frame {
@@ -355,7 +355,7 @@
     }
     .story-text-content p {
         font-size: 1rem;
-        line-height: 1.75; /* Preserves optimized line-height ratios on small viewports */
+        line-height: 1.75; 
     }
     .method-card {
         padding: 30px 20px;
