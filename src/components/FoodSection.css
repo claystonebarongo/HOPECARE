@@ -79,9 +79,6 @@
     box-shadow: 0 10px 25px rgba(255, 204, 0, 0.35);
 }
 
-/* ==========================================================================
-   3. THE PREMIUM 3-PHOTO COMPACT GRID (LEFT ALIGNED)
-   ========================================================================== */
 .food-grid-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
