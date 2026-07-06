@@ -33,7 +33,7 @@ export default function FoodSection() {
                             We are prayerfully looking for compassionate donors who will stand for each child individually, or even a visionary partner who can stand for all of them. Every contribution brings health, strength, and joy to these little ones.
                         </p>
 
-                        {/* HIGH-CONTRAST TARGETED WESTERN UNION TRIGGER */}
+
                         <a
                             href="https://www.westernunion.com/us/en/send-money-to-kenya.html"
                             target="_blank"
