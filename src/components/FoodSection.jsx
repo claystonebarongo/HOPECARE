@@ -22,7 +22,7 @@ export default function FoodSection() {
                         </div>
                     </div>
 
-                    {/* RIGHT SIDE: THE TEXT DESCRIPTION & MATH BREAKDOWN */}
+
                     <div className="food-content-side">
                         <span className="food-badge">NUTRITION & CARE</span>
                         <h2 className="food-title">Sponsor a Child's Meals</h2>
