@@ -119,15 +119,12 @@
     grid-row: 2 / 3;
 }
 
-/* ==========================================================================
-   4. ADAPTIVE RESPONSIVE BREAKPOINTS
-   ========================================================================== */
 @media (max-width: 968px) {
     .food-container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    /* Flips text above grid on mobile screens for a natural reading flow */
+    
     .food-content-side {
         grid-row: 1;
     }
