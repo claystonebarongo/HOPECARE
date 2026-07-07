@@ -67,8 +67,8 @@
 
 .story-text-content p {
     font-size: 1.05rem; 
-    color: #2D3748; /* Darker charcoal tint for optimized readability */
-    line-height: 1.8; /* Elevated line spacing depth so readers don't get bored */
+    color: #2D3748; 
+    line-height: 1.8; 
     margin-bottom: 22px;
     font-weight: 400;
     letter-spacing: -0.1px;
