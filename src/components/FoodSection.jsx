@@ -7,7 +7,7 @@ export default function FoodSection() {
             <div className="food-inner-wrapper">
                 <div className="food-container">
 
-                    {/* LEFT SIDE: THE REVERSED 3-PHOTO MASONRY GRID (MEALTIME ASSETS) */}
+
                     <div className="food-gallery-side">
                         <div className="food-grid-wrapper">
                             <div className="food-img-card food-card-large">
