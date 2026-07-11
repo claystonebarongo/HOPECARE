@@ -6,13 +6,12 @@ export default function CrusadeSection() {
         <section className="crusade-section">
             <div className="crusade-inner-wrapper">
 
-                {/* SECTION HEADER */}
+
                 <div className="crusade-header">
                     <span className="crusade-badge">KINGDOM ASSIGNMENT</span>
                     <h2 className="crusade-title">Operation Winning Souls</h2>
                 </div>
 
-                {/* BULLETPROOF VIDEO PLAYER CONTAINER */}
                 <div className="crusade-video-wrapper">
                     <video
                         className="crusade-native-player"
