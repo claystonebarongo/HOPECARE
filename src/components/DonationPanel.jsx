@@ -44,7 +44,7 @@ export default function DonationPanel() {
                         </div>
                     </div>
 
-                    {/* RIGHT COLUMN: BANK ROUTING & MOBILE MONEY PANELS */}
+
                     <div className="donation-channels-side">
 
                         {/* M-Pesa / Mobile Remittance Card */}
@@ -62,7 +62,7 @@ export default function DonationPanel() {
                             </p>
                         </div>
 
-                        {/* Western Union Money Transfer Card */}
+
                         <div className="glass-panel method-card">
                             <div className="method-header">
                                 <span className="method-icon">💵</span>
@@ -81,7 +81,7 @@ export default function DonationPanel() {
                             </a>
                         </div>
 
-                        {/* Alternative Money Transfer Services Card */}
+
                         <div className="glass-panel method-card">
                             <div className="method-header">
                                 <span className="method-icon">🌍</span>
