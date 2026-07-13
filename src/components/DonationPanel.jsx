@@ -127,6 +127,7 @@ export default function DonationPanel() {
                                     <span className="row-label">BANK SWIFT CODE:</span>
                                     <span className="row-val highlight-green">KCOOKENA</span>
                                 </div>
+                                
                                 <div className="routing-row">
                                     <span className="row-label">BRANCH NAME:</span>
                                     <span className="row-val">KISII</span>
