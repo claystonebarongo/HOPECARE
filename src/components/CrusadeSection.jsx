@@ -2,6 +2,8 @@ import React from 'react';
 import './CrusadeSection.css';
 
 export default function CrusadeSection() {
+
+
     return (
         <section className="crusade-section">
             <div className="crusade-inner-wrapper">
