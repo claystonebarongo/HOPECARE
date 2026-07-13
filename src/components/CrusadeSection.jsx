@@ -40,6 +40,8 @@ export default function CrusadeSection() {
                     </p>
 
                     <div className="crusade-call-to-arms">
+
+
                         "Join us in prayer, join us in the field, and let’s labor together for the greatest harvest of souls in Kisii County."
                     </div>
                 </div>
