@@ -34,6 +34,8 @@ export default function CrusadeSection() {
                         Through dynamic open-air crusades, souls are being saved, lives transformed, the sick healed, and many are experiencing the power of God like never before. Pastor Hezborn Omongo Nyandwaro is preaching with boldness and anointing, declaring the good news of salvation across markets, towns, and rural villages, leaving no soul unreached!
                     </p>
                     <p className="crusade-paragraph">
+
+
                         This is not just a crusade, it’s a Kingdom assignment to bring revival, healing, and restoration to the people of Kisii. Souls are coming to Jesus, families are being restored, and darkness is losing its grip!
                     </p>
 
