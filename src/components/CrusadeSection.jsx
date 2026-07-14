@@ -24,6 +24,8 @@ export default function CrusadeSection() {
                         playsInline
                         preload="metadata"
                         controlsList="nodownload"
+
+
                     >
                         Your browser does not support the video tag.
                     </video>
