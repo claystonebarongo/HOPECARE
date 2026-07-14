@@ -15,6 +15,8 @@ export default function CrusadeSection() {
                 </div>
 
                 <div className="crusade-video-wrapper">
+
+
                     <video
                         className="crusade-native-player"
                         src="/assets/gallery/crusadevideo.mp4"
