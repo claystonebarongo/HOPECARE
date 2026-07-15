@@ -42,6 +42,7 @@ export default function CrusadeSection() {
                     <p className="crusade-paragraph">
 
 
+
                         This is not just a crusade, it’s a Kingdom assignment to bring revival, healing, and restoration to the people of Kisii. Souls are coming to Jesus, families are being restored, and darkness is losing its grip!
                     </p>
 
