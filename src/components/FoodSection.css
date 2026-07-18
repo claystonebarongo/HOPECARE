@@ -48,7 +48,7 @@
 }
 
 .food-desc {
-    
+
     font-size: 1.05rem;
     color: #2D3748;
     line-height: 1.8;
@@ -57,6 +57,7 @@
 }
 
 .food-action-btn {
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +73,7 @@
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    
 }
 
 .food-action-btn:hover {
