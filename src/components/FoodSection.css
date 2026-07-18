@@ -48,6 +48,7 @@
 }
 
 .food-desc {
+    
     font-size: 1.05rem;
     color: #2D3748;
     line-height: 1.8;
@@ -109,7 +110,7 @@
 
 .food-card-large {
 
-    
+
     grid-row: 1 / span 2;
 }
 
