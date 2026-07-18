@@ -81,10 +81,12 @@
     background: #E5B800;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(255, 204, 0, 0.35);
-    
+
 }
 
 .food-grid-wrapper {
+
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
