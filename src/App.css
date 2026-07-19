@@ -107,11 +107,12 @@
 
   @media (max-width: 1024px) {
 
-    
+
     border-right: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
+
 
 #next-steps ul {
   list-style: none;
