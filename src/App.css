@@ -2,20 +2,22 @@
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 5px;
-  color: #1A1A1A; /* High contrast deep charcoal text */
-  background: #FFCC00; /* Signature Brand Yellow */
+  color: #1a1a1a; /* High contrast deep charcoal text */
+  background: #ffcc00; /* Signature Brand Yellow */
   border: 2px solid transparent;
-  transition: border-color 0.3s, background-color 0.3s;
+  transition:
+    border-color 0.3s,
+    background-color 0.3s;
   margin-bottom: 24px;
   font-weight: 700;
   cursor: pointer;
 
   &:hover {
-    background: #E5B800; /* Slightly deeper premium gold on hover */
-    border-color: #1A1A1A;
+    background: #e5b800; /* Slightly deeper premium gold on hover */
+    border-color: #1a1a1a;
   }
   &:focus-visible {
-    outline: 2px solid #FFCC00;
+    outline: 2px solid #ffcc00;
     outline-offset: 2px;
   }
 }
@@ -121,7 +123,7 @@
   }
 
   a {
-    color: #1A1A1A; /* Clear dark links instead of faint text-h variables */
+    color: #1a1a1a; /* Clear dark links instead of faint text-h variables */
     font-size: 16px;
     border-radius: 6px;
     background: rgba(255, 204, 0, 0.1); /* Subtle premium yellow tint base */
@@ -131,12 +133,15 @@
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    transition: box-shadow 0.3s, background 0.3s, border-color 0.3s;
+    transition:
+      box-shadow 0.3s,
+      background 0.3s,
+      border-color 0.3s;
     font-weight: 600;
 
     &:hover {
       background: rgba(255, 204, 0, 0.2);
-      border-color: #FFCC00;
+      border-color: #ffcc00;
       box-shadow: 0 4px 12px rgba(255, 204, 0, 0.15);
     }
     .button-icon {
@@ -177,7 +182,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
@@ -185,7 +190,12 @@
 
   &::before {
     left: 0;
-    border-left-color: rgba(0, 0, 0, 0.2); /* Clean high visibility tick markers */
+    border-left-color: rgba(
+      0,
+      0,
+      0,
+      0.2
+    ); /* Clean high visibility tick markers */
   }
   &::after {
     right: 0;
