@@ -18,7 +18,7 @@ export default function FounderStory() {
                     <div className="founder-accent-line"></div>
                 </div>
 
-                {/* Narrative Text Column */}
+
                 <div className="founder-text-column">
                     <h2 className="founder-section-title">Our Origin Story</h2>
                     <p className="founder-narrative">
