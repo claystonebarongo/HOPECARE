@@ -6,7 +6,7 @@ export default function FounderStory() {
     return (
         <section className="founder-section">
             <div className="glass-panel founder-container">
-                {/* Visual Identity Frame */}
+
                 <div className="founder-image-frame">
                     <div className="founder-placeholder-avatar">
 
