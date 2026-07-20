@@ -77,7 +77,6 @@ export default function Hero({ setActiveTab }) {
                     <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
                         <button className="lightbox-close" onClick={() => setShowVideo(false)}>✕</button>
 
-                        {/* Native video element explicitly configured for cross-browser playback */}
                         <video
                             className="lightbox-video-element"
                             controls
