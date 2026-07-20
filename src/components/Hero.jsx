@@ -54,7 +54,6 @@ export default function Hero({ setActiveTab }) {
                     Every child deserves a haven. Join us in providing safety, restoration, and unconditional love to orphans and vulnerable families in Kisii, Kenya.
                 </p>
 
-                {/* Dual Action Interaction Buttons Layout */}
                 <div className="hero-btn-group">
                     <button
                         className="btn-glow btn-hero-width"
