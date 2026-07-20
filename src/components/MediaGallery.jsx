@@ -191,7 +191,7 @@ export default function MediaGallery() {
                         <button className="gallery-lightbox-close" onClick={() => setLightboxVideo(null)}>✕</button>
 
                         <div className="gallery-lightbox-display">
-                            {/* FIXED: Added strict sandbox flags and allowed cross-origin parameters to bypass Google embedding limits */}
+
                             <iframe
                                 src={lightboxVideo.videoUrl}
                                 className="lightbox-video-player"
