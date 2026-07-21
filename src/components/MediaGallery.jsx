@@ -194,6 +194,8 @@ export default function MediaGallery() {
 
                         <div className="gallery-lightbox-display">
 
+
+
                             <iframe
                                 src={lightboxVideo.videoUrl}
                                 className="lightbox-video-player"
