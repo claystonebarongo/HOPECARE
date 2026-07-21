@@ -184,7 +184,7 @@ export default function MediaGallery() {
                 </div>
             </div>
 
-            {/* --- FIXED LIGHTBOX OVERLAY WINDOW --- */}
+
             {lightboxVideo && (
                 <div className="gallery-lightbox-overlay" onClick={() => setLightboxVideo(null)}>
                     <div className="gallery-lightbox-box" onClick={(e) => e.stopPropagation()}>
