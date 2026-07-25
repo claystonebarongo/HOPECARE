@@ -208,6 +208,8 @@ export default function MediaGallery() {
                             />
                         </div>
 
+
+
                         <div className="gallery-lightbox-footer">
                             <h3>{lightboxVideo.title}</h3>
                             <p>{lightboxVideo.desc}</p>
