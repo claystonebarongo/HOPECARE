@@ -214,6 +214,8 @@ export default function MediaGallery() {
 
 
                             <h3>{lightboxVideo.title}</h3>
+
+
                             <p>{lightboxVideo.desc}</p>
                         </div>
                     </div>
