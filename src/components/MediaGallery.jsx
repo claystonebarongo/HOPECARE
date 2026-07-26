@@ -179,6 +179,7 @@ export default function MediaGallery() {
                                 </button>
                             </div>
                             <div className="video-info-footer">
+
                                 <h4 className="video-card-title">{video.title}</h4>
                                 <p className="video-card-desc">{video.desc}</p>
                             </div>
