@@ -168,6 +168,8 @@ export default function MediaGallery() {
                                 <img src={video.thumbUrl} alt={video.title} className="video-placeholder-cover" />
                                 <div className="video-shade-tint" />
                                 <button
+
+
                                     className="video-central-play-btn"
                                     onClick={() => setLightboxVideo(video)}
                                     aria-label="Play video"
