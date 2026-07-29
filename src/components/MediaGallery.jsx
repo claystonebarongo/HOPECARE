@@ -177,6 +177,7 @@ export default function MediaGallery() {
                                 >
                                     <span className="play-icon-triangle">▶</span>
                                 </button>
+                                
                             </div>
                             <div className="video-info-footer">
 
