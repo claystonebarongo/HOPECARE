@@ -139,6 +139,7 @@ export default function MediaGallery() {
                             className="showcase-img-core"
                         />
                         <div className="showcase-label-overlay">
+
                             <span className="showcase-counter">
                                 {activePhotoIdx + 1} / {galleryPhotos.length}
 
