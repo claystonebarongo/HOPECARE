@@ -141,6 +141,8 @@ export default function MediaGallery() {
                         <div className="showcase-label-overlay">
                             <span className="showcase-counter">
                                 {activePhotoIdx + 1} / {galleryPhotos.length}
+
+
                             </span>
                             <h4 className="showcase-caption">{galleryPhotos[activePhotoIdx].title}</h4>
                         </div>
