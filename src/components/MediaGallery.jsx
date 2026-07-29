@@ -173,6 +173,7 @@ export default function MediaGallery() {
                                     className="video-central-play-btn"
 
                                     onClick={() => setLightboxVideo(video)}
+
                                     aria-label="Play video"
                                 >
                                     <span className="play-icon-triangle">▶</span>
