@@ -160,9 +160,11 @@ export default function MediaGallery() {
 
                     {galleryPhotos.map((_, idx) => (
                         <span
+
                             key={idx}
                             className={`indicator-dot ${idx === activePhotoIdx ? 'active' : ''}`}
                             onClick={() => setActivePhotoIdx(idx)}
+
                         />
                     ))}
                 </div>
