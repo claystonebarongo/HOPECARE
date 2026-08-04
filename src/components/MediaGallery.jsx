@@ -150,6 +150,7 @@ export default function MediaGallery() {
 
                             <h4 className="showcase-caption">{galleryPhotos[activePhotoIdx].title}</h4>
 
+
                         </div>
                     </div>
                     <button className="showcase-nav-btn next" onClick={handleNextPhoto} aria-label="Next image">❯</button>
