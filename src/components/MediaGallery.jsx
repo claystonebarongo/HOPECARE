@@ -156,6 +156,8 @@ export default function MediaGallery() {
                     <button className="showcase-nav-btn next" onClick={handleNextPhoto} aria-label="Next image">❯</button>
                 </div>
                 <div className="showcase-dot-indicators">
+
+
                     {galleryPhotos.map((_, idx) => (
                         <span
                             key={idx}
