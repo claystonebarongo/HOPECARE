@@ -68,6 +68,7 @@ export default function MediaGallery() {
             desc: 'Gathering together in unity, faith outreach, and shared local encouragement sessions.'
         },
         {
+
             id: 'v5',
             videoUrl: 'https://drive.google.com/file/d/1xjaOVyX6qCn86M2ZGiS3Skf9ZpSlYvG2/preview',
             thumbUrl: '/assets/gallery/IMG-20260616-WA0095.jpg',
