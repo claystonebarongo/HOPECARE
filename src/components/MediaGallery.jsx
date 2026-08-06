@@ -50,6 +50,8 @@ export default function MediaGallery() {
 
 
         {
+
+
             id: 'v2',
             videoUrl: 'https://drive.google.com/file/d/12Yck2qGYG1RdoUYHN-KcgYct3zwc15DC/preview',
             thumbUrl: '/assets/backgrounds/IMG-20260616-WA0175.jpg',
