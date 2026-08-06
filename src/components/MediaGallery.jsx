@@ -58,6 +58,8 @@ export default function MediaGallery() {
             title: 'Daily Welfare & Resource Management',
             desc: 'Providing structure, consistent nutritional frameworks, and protective care pipelines.'
         },
+
+
         {
             id: 'v3',
             videoUrl: 'https://drive.google.com/file/d/1MGuthr8h0OP5OsFxsT5dNuLWoOus1u9B/preview',
