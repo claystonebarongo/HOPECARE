@@ -9,6 +9,8 @@ export default function DonationPanel() {
                 <div className="donation-container">
 
                     {/* LEFT COLUMN: VISUAL STORY & CONTENT HERO */}
+
+
                     <div className="donation-story-side">
                         <span className="donation-badge">MAKE AN IMPACT</span>
                         <h2 className="donation-main-title">
