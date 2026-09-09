@@ -18,7 +18,9 @@ export default function DonationPanel() {
                         </h2>
 
                         <div className="story-image-frame">
+
                             {/* FIXED: Added leading slash for absolute route alignment to root public directory */}
+
                             <img
                                 src="/assets/gallery/IMG-20260616-WA0095.jpg"
                                 alt="Hopecare Outreach and Support"
